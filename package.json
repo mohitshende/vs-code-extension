@@ -1,0 +1,35 @@
+{
+  "name": "my-react-extension",
+  "displayName": "My React Extension",
+  "description": "My custom VS Code extension for replacing strings and adding imports in React projects.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.replaceStringAndImport"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.replaceStringAndImport",
+        "title": "Replace String and Add Import in React Project"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.19.0",
+    "vsce": "^2.15.0",
+    "vscode": "^1.1.37",
+    "yarn": "^1.22.19"
+  }
+}

@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# npm
+/node_modules
+
+# Compiled output
+/out
+
+# Visual Studio Code specific files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
